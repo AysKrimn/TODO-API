@@ -5,6 +5,8 @@ import './App.css';
 
 // sayfalarımız
 import Home from './Pages/Home';
+import SingleNote from './Pages/SingleNote';
+
 
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
 
 
         <Route path='/' element={<Home></Home>}></Route>
-
+        <Route path='/notlar/:id' element={<SingleNote></SingleNote>}></Route>
       </Routes>
 
     </>

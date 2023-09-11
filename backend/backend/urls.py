@@ -22,5 +22,10 @@ from api.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1', send_routes),
-    path('api/v1/notes', get_notes)
+    path('api/v1/notes', get_notes),
+    path('api/v1/notes/create', createNote),
+    path('api/v1/notes/<id>', get_single_note),
+    path('api/v1/notes/<id>/update', updateNote),
+    path('api/v1/notes/<id>/delete', deleteNote)
+
 ]
